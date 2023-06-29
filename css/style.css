@@ -38,7 +38,7 @@ body {
   display: inline-block;
   width: 100%;
   background: lightblue;
-  margin-top: 20px;
+  margin-top: 60px;
   padding: 15px;
   font-family: inherit;
   font-size: 16px;
@@ -60,7 +60,7 @@ body {
 .form-control {
   position: relative;
   margin: 20px 0 40px;
-  width: 500px;
+  width: 100%;
 }
 
 .form-control input {
@@ -99,9 +99,42 @@ body {
   transform: translateY(-30px);
 }
 
-/* @media screen and (min-width: 320px) {
-  .form-control {
-    margin: 20px 40px;
-    width: 20px;
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 320px;
   }
-} */
+}
+@media only screen and (min-width: 767px) {
+  .container {
+    width: 700px;
+  }
+}
+
+/* Gender CSS */
+.button-box {
+  width: 220px;
+  position: relative;
+  border-radius: 30px;
+  background: #fff;
+}
+
+.toggle-btn {
+  padding: 10px 40px;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+}
+
+#toggle {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: steelblue;
+  border-radius: 30px;
+  transition: 0.5s;
+}

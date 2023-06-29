@@ -1,3 +1,4 @@
+// Animation on the inputs
 const labels = document.querySelectorAll('.form-control label');
 
 labels.forEach((label) => {
@@ -9,3 +10,12 @@ labels.forEach((label) => {
     )
     .join('');
 });
+
+// toggling between icons
+function maleClick() {
+  toggle.style.left = '0';
+}
+
+function femaleClick() {
+  toggle.style.left = '110px';
+}
